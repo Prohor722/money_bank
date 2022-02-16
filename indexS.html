@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Tailwind CSS  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+
+        <!-- Header Title  -->
+        <h1 class="text-4xl font-bold text-center my-8">Money Monster</h1>
+    </header>
+
+    <main class="flex">
+        <section class="mx-40">
+            <img src="./images/given_pic.jpg" alt="">
+        </section>
+        <section class="text-center font-semibold ml-50 bg-gray-100">
+            <h6 class="text-lg font-semibold">Income</h6>
+            <div class="my-4">
+                <label for="income">Income:</label>
+                <input type="text" class="px-5 py-2 ml-10 bg-gray-300 rounded" id="income">
+            </div>
+
+            <h6 class="text-lg font-semibold">Expenses</h6>
+            <div class="my-4">
+                <label for="food">Food:</label>
+                <input type="text" class="px-5 py-2 ml-10 bg-gray-300 rounded" id="food">
+            </div>
+            <div class="my-4">
+                <label for="rent">Rent:</label>
+                <input type="text" class="px-5 py-2 ml-10 bg-gray-300 rounded" id="rent">
+            </div>
+            <div class="my-4">
+                <label for="clothes">Clothes:</label>
+                <input type="text" class="px-5 py-2 ml-10 bg-gray-300 rounded" id="clothes">
+            </div>
+
+            <button class="bg-cyan-500 text-white px-10 py-2 rounded font-semibold shadow-md">Calculate</button>
+
+            <div class="my-4">
+                <h6 class="my-4 font-semibold">Total Expenses: <span id="total">7000</span></h6>
+                <h6  class="my-4 font-semibold">Balance: <span id="balance">7000</span></h6>
+            </div>
+
+            <label for="save">Save:</label>
+            <input type="text" class=" ml-2 bg-gray-300 w-20 py-1 px-7 rounded" id="save">
+            <span>%</span>
+            <button class="bg-cyan-500 text-white px-10 py-1 rounded font-semibold shadow-md" id="save-btn">Save</button>
+
+            <div class="my-4">
+                <h6 class="my-4 font-semibold">Saving Amount: <span id="savingAmount">7000</span></h6>
+                <h6  class="my-4 font-semibold">Remaning Balance: <span id="remaningAmount">7000</span></h6>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
