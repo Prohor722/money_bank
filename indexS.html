@@ -16,47 +16,53 @@
     </header>
 
     <main class="flex">
-        <section class="mx-40">
+        <section class="ml-40 mr-20">
             <img src="./images/given_pic.jpg" alt="">
         </section>
-        <section class="text-center font-semibold ml-50 bg-gray-100">
-            <h6 class="text-lg font-semibold">Income</h6>
-            <div class="my-4">
+        <section class="text-center font-semibold bg-gray-100 px-8 pt-10 pb-4">
+            <h6 class="text-lg font-bold">Income</h6>
+            <div class="my-6">
                 <label for="income">Income:</label>
-                <input type="text" class="px-5 py-2 ml-10 bg-gray-300 rounded" id="income">
+                <input type="text" class="px-5 py-1 ml-2 w-48 bg-gray-300 rounded" id="income">
             </div>
 
-            <h6 class="text-lg font-semibold">Expenses</h6>
-            <div class="my-4">
-                <label for="food">Food:</label>
-                <input type="text" class="px-5 py-2 ml-10 bg-gray-300 rounded" id="food">
+            <h6 class="text-lg font-bold">Expenses</h6>
+            <div class="my-6">
+                <label for="food" class="ml-4">Food:</label>
+                <input type="text" class="px-5 py-1 ml-2 w-48 bg-gray-300 rounded" id="food">
             </div>
             <div class="my-4">
-                <label for="rent">Rent:</label>
-                <input type="text" class="px-5 py-2 ml-10 bg-gray-300 rounded" id="rent">
+                <label for="rent" class="ml-4">Rent:</label>
+                <input type="text" class="px-5 py-1 ml-2 w-48 bg-gray-300 rounded" id="rent">
             </div>
             <div class="my-4">
                 <label for="clothes">Clothes:</label>
-                <input type="text" class="px-5 py-2 ml-10 bg-gray-300 rounded" id="clothes">
+                <input type="text" class="px-5 py-1 ml-2 w-48 bg-gray-300 rounded" id="clothes">
             </div>
 
-            <button class="bg-cyan-500 text-white px-10 py-2 rounded font-semibold shadow-md">Calculate</button>
+            <button class="bg-cyan-500 text-white px-12 py-2 rounded font-semibold shadow-md" id="calculate">Calculate</button>
 
             <div class="my-4">
                 <h6 class="my-4 font-semibold">Total Expenses: <span id="total">7000</span></h6>
                 <h6  class="my-4 font-semibold">Balance: <span id="balance">7000</span></h6>
             </div>
 
-            <label for="save">Save:</label>
-            <input type="text" class=" ml-2 bg-gray-300 w-20 py-1 px-7 rounded" id="save">
-            <span>%</span>
-            <button class="bg-cyan-500 text-white px-10 py-1 rounded font-semibold shadow-md" id="save-btn">Save</button>
+            <div class="py-4">
+                <label for="save">Save:</label>
+                <input type="text" class="mx-2 bg-gray-300 w-24 py-1 px-7 rounded" id="save">
+                <span>%</span>
+                <button class="ml-2 bg-cyan-500 text-white px-12 py-1 rounded font-semibold shadow-md" id="save-btn">Save</button>
+            </div>
 
             <div class="my-4">
-                <h6 class="my-4 font-semibold">Saving Amount: <span id="savingAmount">7000</span></h6>
+                <h6 class="my-4 font-semibold">Saving Amount: <span id="savingAmount">7500</span></h6>
                 <h6  class="my-4 font-semibold">Remaning Balance: <span id="remaningAmount">7000</span></h6>
             </div>
         </section>
     </main>
+
+    <footer>
+        <script src="./js/script.js"></script>
+    </footer>
 </body>
 </html>

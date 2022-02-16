@@ -9,6 +9,7 @@ document.getElementById('calculate').addEventListener('click',function(){
     const rent = getValue('rent');
     const food = getValue('food');
     const clothes = getValue('clothes');
+    console.log(food);
     const expense = rent + food + clothes;
 
     // negative input error checking 
