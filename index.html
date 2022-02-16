@@ -4,30 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Bootstrap Link  -->
-    <link rel="stylesheet" href="./css/bootstrap.css">
+    <title>Money Monster</title>
+    <!-- Tailwind CSS  -->
+    <script src="./css/style.css"></script>
 </head>
 <body>
+    <!-- Header Title  -->
     <header>
-        <h1 class="text-warning text-center">Money Master</h1>
+        <h1 id="#headerText">Money Monster</h1>
     </header>
-    <main class="container mt-5">
-
-        <!-- Left Image  -->
-        <div class="row gap-3">
-            <div class="col-md-6">
-                <img class="container-fluid" src="./images/side_pic.jpg">
+    
+    <!-- Main Section  -->
+    <main>
+        <div class="grid grid-cols-2 ms-35">
+            <div id="left-part">
+                <img src="./images/given_pic.jpg" alt="" srcset="">
             </div>
-            <div class="col-md-4 d-flex flex-column justify-content-center">
-                <h4 class="text-center">Income</h4>
-                <label for=""> Income: </label>
-                <input class="my-2" type="number">
+            <div class="flex align-center justify-center text-center bg-red-300 ">
+
+                <!-- Income part -->
+                <div >
+                    <h6 class="text-lg font-semibold">Income</h6>
+
+                    <label class="m-5" for="">Income:</label>
+                    <input type="number">
+
+                    <h6 class="text-lg font-semibold my-5">Expense</h6>
+
+                    <!-- Expense Part  -->
+                    <label class="" for="">Food:</label>
+                    <input type="number"><br>
+
+                    <label class="" for="">Rent:</label>
+                    <input type="number">
+                </div>
+
                 
-                <h4 class="text-center">Income</h4>
-                <input class="my-2" type="number">
-                <label for=""> Income: </label>
-                <input class="my-2" type="number">
+                <div>
+                    
+                </div>
             </div>
         </div>
     </main>
