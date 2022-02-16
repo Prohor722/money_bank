@@ -1,22 +1,28 @@
 
 // input string to number function 
 function getValue(id){
-    return parseFloat(document.getElementById(id).value)
+    let text = document.getElementById(id).value;
+    
+    //blank input error
+    if(text == ""){
+        text= 0;
+    }
+    return parseFloat(text);
 }
 
+// Total and balance calculation
 document.getElementById('calculate').addEventListener('click',function(){
     const income = getValue('income');
     const rent = getValue('rent');
     const food = getValue('food');
     const clothes = getValue('clothes');
-    console.log(food);
     const expense = rent + food + clothes;
 
     // negative input error checking 
-    if(income>0 && expense>=0 && food*rent*clothes>=0){
+    if(income>=0 && expense>=0 && food>=0 && rent>=0 &&clothes>=0){
 
         // expense error checking 
-        if(expense<income){
+        if(expense<=income){
         document.getElementById('total').innerText = expense;
         document.getElementById('balance').innerText = income - expense;
         }
@@ -38,7 +44,7 @@ document.getElementById('save-btn').addEventListener('click',function(){
     const savingAount = income*percent;
 
     // Negative percent error 
-    if(percent>0){
+    if(percent>=0){
 
         // saving more then balance 
         if(balanceValue>=savingAount){
