@@ -5,28 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- Tailwind CSS  -->
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+    <!-- Tailwind CSS File -->
     <script src="./css/tailwind.js"></script>
+
+    <!-- Custom CSS Link -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
 
         <!-- Header Title  -->
-        <h1 class="text-4xl font-bold text-center text-teal-600 my-8">Money Monster</h1>
+        <h1 class="text-4xl font-bold text-center text-teal-600 my-8">Money Monster
+            <img id="header-logo" src="./images/pngwing.com (2).png" alt="">
+        </h1>
     </header>
 
-    <main class="flex mb-8">
-        <section class="ml-40 mr-20">
-            <img src="./images/given_pic.jpg" alt="">
+    <main class="lg:flex md:flex-row mb-8">
+
+        <!-- Left Image  -->
+        <section class="lg:ml-40 lg:mr-20 shadow-md md:order-first" id="left-image">
+            <img src="./images/cal.jpg" alt="">
         </section>
-        <section class="text-center font-semibold bg-gray-100 px-8 pt-10 pb-4">
+
+        <!-- Calculation Section  -->
+        <section class="text-center font-semibold bg-gray-100 px-8 pt-10 pb-4  md:order-last">
+
+            <!-- Income part  -->
             <h6 class="text-lg font-bold">Income</h6>
             <div class="my-6">
                 <label for="income">Income:</label>
                 <input type="text" class="px-5 py-1 ml-2 w-48 bg-gray-300 rounded" id="income">
             </div>
 
+            <!-- Expense Part  -->
             <h6 class="text-lg font-bold">Expenses</h6>
             <div class="my-6">
                 <label for="food" class="ml-4">Food:</label>
@@ -48,6 +60,7 @@
                 <h6  class="my-4 font-semibold">Balance: <span id="balance">7000</span></h6>
             </div>
 
+            <!-- Saving Part  -->
             <div class="py-4">
                 <label for="save">Save:</label>
                 <input type="text" class="mx-2 bg-gray-300 w-24 py-1 px-7 rounded" id="save">
@@ -63,6 +76,7 @@
     </main>
 
     <footer>
+        <!-- JS file link  -->
         <script src="./js/script.js"></script>
     </footer>
 </body>
