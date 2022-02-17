@@ -36,6 +36,7 @@ document.getElementById('calculate').addEventListener('click',function(){
 
 })
 
+//Save Calculation Part
 document.getElementById('save-btn').addEventListener('click',function(){
     const percent = getValue('save')/100;
     const income = getValue('income');
